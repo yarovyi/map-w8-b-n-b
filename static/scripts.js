@@ -14,11 +14,12 @@ function performAction(url) {
                 moveMapToKha();
             } else if (data === "moveMapToUzh()") {
                 moveMapToUzh();
-            } else {
-                alert(data);
             } else if (data === "moveMapToKRih()") {
                 moveMapToKRih();
-        })
+            } else {
+                    alert(data);
+                } 
+    })
         .catch(error => console.error('Помилка:', error));
 }
 
@@ -35,8 +36,9 @@ function moveMapToUzh() {
         zoom: 12 
     });
 }
-function moveMapToKha() {
+function moveMapToKRih() {
     map.flyTo({
         center: [33.3918, 47.9105], // Координати Кривого Рогу
         zoom: 12 // Новий рівень масштабу
     });
+}
