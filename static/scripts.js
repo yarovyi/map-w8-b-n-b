@@ -12,6 +12,8 @@ function performAction(url) {
         .then(data => {
             if (data === "moveMapToLviv()") {
                 moveMapToLviv();
+            } else if (data === "moveMapToUzh()") {
+                moveMapToUzh();
             } else {
                 alert(data);
             }
