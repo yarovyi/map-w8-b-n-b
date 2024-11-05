@@ -10,9 +10,7 @@ function performAction(url) {
     fetch(url)
         .then(response => response.text())
         .then(data => {
-            if (data === "moveMapToLviv()") {
-                moveMapToLviv();
-            } if (data === "moveMapToKha()") {
+            if (data === "moveMapToKha()") {
                 moveMapToKha();
             } else if (data === "moveMapToUzh()") {
                 moveMapToUzh();
@@ -21,13 +19,6 @@ function performAction(url) {
             }
         })
         .catch(error => console.error('Помилка:', error));
-}
-
-function moveMapToLviv() {
-    map.flyTo({
-        center: [24.0316, 49.8429], // Координати Львова
-        zoom: 12 // Новий рівень масштабу
-    });
 }
 
 function moveMapToKha() {
