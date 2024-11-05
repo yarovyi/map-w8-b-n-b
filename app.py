@@ -30,7 +30,7 @@ def action5():
 
 @app.route("/action6")
 def action6():
-    return "Дія для кнопки 6 виконується"
+    return "moveMapToLviv()"
 
 if __name__ == "__main__":
     app.run(debug=True)
