@@ -2,28 +2,25 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title>Mapbox Example</title>
+    <title>Mapbox Example with Buttons</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://api.mapbox.com/mapbox-gl-js/v2.15.0/mapbox-gl.js"></script>
     <link href="https://api.mapbox.com/mapbox-gl-js/v2.15.0/mapbox-gl.css" rel="stylesheet" />
     <style>
-        body { margin: 0; padding: 0; }
-        #map { width: 100%; height: 100vh; }
+        body { margin: 0; padding: 0; font-family: Arial, sans-serif; }
+        #map { width: 100%; height: 80vh; }
+        .buttons { margin: 10px; text-align: center; }
+        button { margin: 5px; padding: 10px 20px; }
     </style>
 </head>
 <body>
     <h1>ПРИВІТ СВІТ!</h1>
+<<<<<<< HEAD
     <p>Тестимо роботу</p>
+=======
     <h3>Привіт-привіт</h3>
+>>>>>>> e5c99ac56c17328ed66a46f8dabc697579a928c8
     <div id="map"></div>
-    <script>
-        mapboxgl.accessToken = 'pk.eyJ1Ijoic3VkaWxrb3Zza3kiLCJhIjoiY20zNGI3ejNsMXBpYjJpc2FrNzRiMmoxbCJ9.mP73e1WrGJUSHriWgvyLPg';
-        const map = new mapboxgl.Map({
-            container: 'map', // ID контейнера
-            style: 'mapbox://styles/mapbox/streets-v11', // Стиль мапи
-            center: [30.5234, 50.4501], // Координати для центру карти (Київ)
-            zoom: 10 // Рівень масштабу
-        });
-    </script>
+    <script src="/static/scripts.js"></script>
 </body>
 </html>
