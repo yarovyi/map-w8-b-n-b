@@ -26,9 +26,9 @@ function moveMapToLviv() {
     });
 }
 
-function moveMapToLviv() {
+function moveMapToUzh() {
     map.flyTo({
-        center: [22.2879, 48.6208], // Координати Львова
+        center: [22.2879, 48.6208], // Координати Uzhhorod
         zoom: 12 
     });
 }
