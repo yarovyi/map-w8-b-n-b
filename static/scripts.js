@@ -32,7 +32,7 @@ function moveMapToLviv() {
 
 function moveMapToKha() {
     map.flyTo({
-        center: [49.9935, 36.2304], // Координати Харкова
+        center: [36.2304, 49.9935], // Координати Харкова
         zoom: 12 // Новий рівень масштабу
     });
 }
