@@ -16,7 +16,8 @@ function performAction(url) {
                 moveMapToUzh();
             } else {
                 alert(data);
-            }
+            } else if (data === "moveMapToKRih()") {
+                moveMapToKRih();
         })
         .catch(error => console.error('Помилка:', error));
 }
