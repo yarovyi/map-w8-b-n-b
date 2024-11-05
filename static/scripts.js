@@ -1,4 +1,4 @@
-mapboxgl.accessToken = 'ТУТ_КЛЮЧ_ДО_МАПБОКС';
+mapboxgl.accessToken = 'pk.eyJ1Ijoic3VkaWxrb3Zza3kiLCJhIjoiY20zNGI3ejNsMXBpYjJpc2FrNzRiMmoxbCJ9.mP73e1WrGJUSHriWgvyLPg';
 const map = new mapboxgl.Map({
     container: 'map', // ID контейнера
     style: 'mapbox://styles/mapbox/streets-v11', // Стиль мапи
