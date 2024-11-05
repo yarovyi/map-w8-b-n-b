@@ -14,7 +14,7 @@ def action1():
 
 @app.route("/action2")
 def action2():
-    return "Дія для кнопки 2 виконується"
+    return "moveMapToUzh()"
 
 @app.route("/action3")
 def action3():
@@ -27,10 +27,6 @@ def action4():
 @app.route("/action5")
 def action5():
     return "moveMapToKRih()"
-
-@app.route("/action7")
-def action7():
-    return "moveMapToUzh()"
 
 if __name__ == "__main__":
     app.run(debug=True)
