@@ -32,5 +32,9 @@ def action5():
 def action6():
     return "moveMapToLviv()"
 
+@app.route("/action7")
+def action6():
+    return "moveMapToUzh()"
+
 if __name__ == "__main__":
     app.run(debug=True)
