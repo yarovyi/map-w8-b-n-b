@@ -14,13 +14,33 @@
     </style>
 </head>
 <body>
-    <h1>ПРИВІТ СВІТ!</h1>
-<<<<<<< HEAD
-    <p>Тестимо роботу</p>
-=======
-    <h3>Привіт-привіт</h3>
->>>>>>> e5c99ac56c17328ed66a46f8dabc697579a928c8
+    <div class="buttons">
+        <button onclick="performAction('/action1')">1</button>
+        <button onclick="performAction('/action2')">2</button>
+        <button onclick="performAction('/action3')">3</button>
+        <button onclick="performAction('/action4')">4</button>
+        <button onclick="performAction('/action5')">5</button>
+        <button onclick="performAction('/action6')">6</button>
+    </div>
     <div id="map"></div>
-    <script src="/static/scripts.js"></script>
+
+    <script>
+        mapboxgl.accessToken = 'pk.eyJ1Ijoic3VkaWxrb3Zza3kiLCJhIjoiY20zNGI3ejNsMXBpYjJpc2FrNzRiMmoxbCJ9.mP73e1WrGJUSHriWgvyLPg';
+        const map = new mapboxgl.Map({
+            container: 'map', // ID контейнера
+            style: 'mapbox://styles/mapbox/streets-v11', // Стиль мапи
+            center: [30.5234, 50.4501], // Координати для центру карти (Київ)
+            zoom: 10 // Рівень масштабу
+        });
+
+        function performAction(url) {
+            fetch(url)
+                .then(response => response.text())
+                .then(data => {
+                    alert(data); // Можеш змінити це, щоб виконувати інші дії на карті
+                })
+                .catch(error => console.error('Помилка:', error));
+        }
+    </script>
 </body>
 </html>
