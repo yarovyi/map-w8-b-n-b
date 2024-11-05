@@ -12,6 +12,8 @@ function performAction(url) {
         .then(data => {
             if (data === "moveMapToLviv()") {
                 moveMapToLviv();
+            } if (data === "moveMapToKha()") {
+                moveMapToKha();
             } else if (data === "moveMapToUzh()") {
                 moveMapToUzh();
             } else {
@@ -24,6 +26,13 @@ function performAction(url) {
 function moveMapToLviv() {
     map.flyTo({
         center: [24.0316, 49.8429], // Координати Львова
+        zoom: 12 // Новий рівень масштабу
+    });
+}
+
+function moveMapToKha() {
+    map.flyTo({
+        center: [49.9935, 36.2304], // Координати Харкова
         zoom: 12 // Новий рівень масштабу
     });
 }
