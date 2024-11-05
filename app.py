@@ -10,7 +10,7 @@ def index():
 # Маршрути для кнопок
 @app.route("/action1")
 def action1():
-    return "Дія для кнопки 1 виконується"
+    return "moveMapToKha()"
 
 @app.route("/action2")
 def action2():
