@@ -28,10 +28,6 @@ def action4():
 def action5():
     return "Дія для кнопки 5 виконується"
 
-@app.route("/action6")
-def action6():
-    return "moveMapToLviv()"
-
 @app.route("/action7")
 def action7():
     return "moveMapToUzh()"
